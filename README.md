@@ -1,6 +1,6 @@
 ## Biography
 
-I am a visiting student at Westlake University. My main research interests are efficient visual network design and vector quantization-based representation learning. I am also interested in AI for Genomics applications.
+I am a research intern at The Hong Kong University of Science and Technology (HKUST). My research interests center around Multi-modal Learning and Multi-task Scene Understanding. I am also interested in efficient visual network architecture design.
 
-[[Contact details](wangzedong@westlake.edu.cn)]
+[[Contact details](jackywang28@outlook.com)]
 [[Home page](https://jacky1128.github.io/)]
