@@ -32,27 +32,47 @@
 Address: RPg Hub 1007, Academic Building, HKUST, Clear Water Bay, Kowloon, Hong Kong (<a href="https://www.google.com/maps/search/HKUST+map/@22.335677,114.2613186,17z" target="_blank" style="color:#002FA7">MAP</a>).<br />
 
 
-<class="staffshortcut">
- <A HREF="#News" style="color:#002FA7">News</A> | 
- <A HREF="#Interests" style="color:#002FA7">Interests</A> | 
- <A HREF="#Education" style="color:#002FA7">Education</A> | 
- <A HREF="#Internship" style="color:#002FA7">Intern</A> | 
- <A HREF="#Publications" style="color:#002FA7">Pubs</A> | 
- <A HREF="#Services" style="color:#002FA7">Services</A> | 
- <A HREF="#Awards" style="color:#002FA7">Awards</A> | 
- <A HREF="#Acknowledgement" style="color:#002FA7">Acknowledgement</A> | 
- <A HREF="./Files/Jacky_CV.pdf" style="color:#002FA7">Resumé (CV)</A> 
-<br />
-<br />
+<div class="navigation-bar">
+    <a href="#News" class="nav-link">News</a> | 
+    <a href="#Interests" class="nav-link">Interests</a> | 
+    <a href="#Education" class="nav-link">Education</a> | 
+    <a href="#Internship" class="nav-link">Interns</a> | 
+    <a href="#Publications" class="nav-link">Pubs</a> | 
+    <a href="#Services" class="nav-link">Services</a> | 
+    <a href="#Awards" class="nav-link">Awards</a> | 
+    <a href="#Acknowledgement" class="nav-link">Acknowledgement</a> | 
+    <a href="./Files/Jacky_CV.pdf" class="nav-link">Resumé (CV)</a>
+  </div>
+  
+  <style>
+  .navigation-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 15px 0;
+  }
+  .nav-link {
+    color: #002FA7;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+  }
+  .nav-link:hover {
+    background-color: #e6eeff;
+    transform: translateY(-2px);
+  }
+</style>
 
 <!-- Add in the head section -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 Email: zedong.wang@connect.ust.hk (preferred); zwangmw@cse.ust.hk; wangzedong@westlake.edu.cn;<br />
-[<a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#002FA7"><i class="fa-solid fa-graduation-cap"></i>Google Scholar</a>]  
-[<a href="https://openreview.net/profile?id=~Zedong_Wang1" target="_blank" style="color:#002FA7"><i class="fa-solid fa-book-open"></i>OpenReview</a>]
-[<a href="https://twitter.com/ZedongWangAI" target="_blank" style="color:#002FA7">Twitter</a>]
-[<a href="https://huggingface.co/ZedongWangAI" target="_blank" style="color:#002FA7">Hugging Face</a>] 
+[<a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#002FA7">Google Scholar</a>]  
+[<a href="https://openreview.net/profile?id=~Zedong_Wang1" target="_blank" style="color:#002FA7">OpenReview</a>]
+[<a href="https://twitter.com/ZedongWangAI" target="_blank" style="color:#002FA7">Twitter (X)</a>]
+[<a href="https://huggingface.co/ZedongWangAI" target="_blank" style="color:#002FA7"><i class="fa-solid fa-hugs"></i>Hugging Face</a>] 
 [<a href="https://github.com/Jacky1128" target="_blank" style="color:#002FA7"><i class="fa-brands fa-github"></i>GitHub</a>] 
 [<a href="https://orcid.org/0009-0000-0112-0491" target="_blank" style="color:#002FA7"><i class="fa-brands fa-orcid"></i>ORCID</a>]  
 [<a href="https://www.strava.com/athletes/104629081" target="_blank" style="color:#002FA7"><i class="fa-brands fa-strava"></i>Strava</a>]
@@ -65,16 +85,12 @@ Email: zedong.wang@connect.ust.hk (preferred); zwangmw@cse.ust.hk; wangzedong@we
 </td></tr></table>
 
 
-
-
 <A NAME="Short Bio"><h2>Short Bio</h2></A>
 <div style="text-align:justify; line-height:132%">
 Zedong Wang (Jacky) is currently a first-year <a href="https://cse.hkust.edu.hk/admin/factsheet/" target="_blank" style="color:#002FA7">CSE</a> PhD student at The Hong Kong University of Science and Technology (<a href="https://hkust.edu.hk" target="_blank" style="color:#002FA7">HKUST</a>), 
 advised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=OuSPv-AAAAAJ" target="_blank" style="color:#002FA7">Dan Xu</a>. Previously, he was a visiting student at <a href="https://en.westlake.edu.cn" target="_blank" style="color:#002FA7">Westlake University</a>. He received his bachelor's degree in Electronics & Information Engineering from Huazhong University of Science and Technology (<a href="https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology" target="_blank" style="color:#002FA7">HUST</a>), where he was fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=qNCTLV0AAAAJ" target="_blank" style="color:#002FA7">Xinggang Wang</a>.
 </p>
 His research centers on deep learning, computer vision, multi-task and multi-modal learning, with a specific focus on (i) efficient learning architectures, (ii) unified visual perception/understanding/generation frameworks, and (iii) optimizers in the era of (M)LLMs. He has been recognized as Outstanding/Top Reviewer at several prestigious conferences, such as <a href="https://eccv.ecva.net/Conferences/2024/Reviewers#all-outstanding-reviewers" target="_blank" style="color:#002FA7">ECCV 2024</a>, <a href="https://2024.acmmm.org/outstanding-ac-reviewer" target="_blank" style="color:#002FA7">ACM MM 2024</a>, and <a href="http://bmvc2024.org/people/reviewers/" target="_blank" style="color:#002FA7">BMVC 2024</a>.
-
-
 
 
 
@@ -188,13 +204,28 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
 
 
 <style>
+.imgtable {
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.imgtable:hover {
+  background-color: #f9f9ff;
+  transform: translateX(5px);
+}
+
 .pub-img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #464646 !important;
+    padding: 5px !important;
+    border-radius: 12px !important;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1) !important;
 }
     
 .pub-img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
 }
 
 .pub-title {
@@ -205,8 +236,43 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     margin-bottom: 4px;
     color: #002FA7;
 }
+.imgtable td {
+  padding: 12px;
+  vertical-align: top;
+}
 </style>
-    
+
+<style>
+    @media screen and (max-width: 768px) {
+      .imgtable, .imgtable tr, .imgtable td {
+        display: block;
+        width: 100%;
+      }
+      
+      .imgtable td[align="left"] {
+        padding-top: 15px;
+      }
+      
+      .pub-img {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+      }
+      
+      .navigation-bar {
+        justify-content: center;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+      
+      #back_top {
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+</style>
 
 
 <p><b>Selected Preprints (*: Equal Contribution. †: Corresponding Author.)</b>: </p>
