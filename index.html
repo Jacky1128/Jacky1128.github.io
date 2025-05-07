@@ -185,47 +185,6 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
 
 <A NAME="Publications"><h2>Publications</h2></A>
 
-<div class="pub-filter" style="margin-bottom: 15px;">
-    <button class="filter-btn active" onclick="filterPubs('all')" style="background-color:#002FA7; color:white; border:none; padding:5px 10px; border-radius:4px; margin-right:5px; cursor:pointer;">All</button>
-    <button class="filter-btn" onclick="filterPubs('first')" style="background-color:#f0f0f0; color:#000; border:none; padding:5px 10px; border-radius:4px; margin-right:5px; cursor:pointer;">First Author</button>
-    <button class="filter-btn" onclick="filterPubs('coauthor')" style="background-color:#f0f0f0; color:#000; border:none; padding:5px 10px; border-radius:4px; margin-right:5px; cursor:pointer;">Co-author</button>
-</div>
-
-<!-- Add this script at the end of your body section -->
-<script>
-    function filterPubs(type) {
-      // Update button styles
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.style.backgroundColor = "#f0f0f0";
-        btn.style.color = "#000";
-      });
-      event.target.style.backgroundColor = "#002FA7";
-      event.target.style.color = "#fff";
-      
-      // Show/hide publications
-      if(type === 'all') {
-        document.querySelectorAll('.imgtable').forEach(pub => {
-          pub.style.display = 'table';
-        });
-      } else if(type === 'first') {
-        document.querySelectorAll('.imgtable').forEach(pub => {
-          if(pub.closest('p').previousElementSibling && pub.closest('p').previousElementSibling.textContent.includes('First Author')) {
-            pub.style.display = 'table';
-          } else {
-            pub.style.display = 'none';
-          }
-        });
-      } else if(type === 'coauthor') {
-        document.querySelectorAll('.imgtable').forEach(pub => {
-          if(pub.closest('p').previousElementSibling && pub.closest('p').previousElementSibling.textContent.includes('Co-author')) {
-            pub.style.display = 'table';
-          } else {
-            pub.style.display = 'none';
-          }
-        });
-      }
-    }
-</script>
 
 
 <style>
