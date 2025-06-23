@@ -167,6 +167,63 @@
     color: #333333;
     font-style: italic;
   }
+
+  .experience-date {
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  /* Research Interests Section */
+  .interests-section {
+    padding-top: 10px;
+  }
+
+  .interest-category {
+    margin-bottom: 20px;
+  }
+
+  .interest-category-title {
+    font-weight: 600;
+    font-size: 1.05em;
+    color: #333;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .paper-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #eef6ff;
+    color: #1d4ed8;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .paper-tag:hover {
+    background-color: #dbeafe;
+    color: #1e40af;
+  }
+
+  .paper-tag i {
+    font-size: 0.8em;
+  }
+
+  .dashed-underline {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+  }
 </style>
 
 </head>
@@ -273,12 +330,31 @@ His research centers on deep learning, computer vision, and multi-task learning,
 
 
 <A NAME="Interests"><h2>Research Interests</h2></A>
-Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learning, including (but not limited to):
-<ul>
-    <li style="margin-bottom: 8px;"><b>Data-efficient Learning:</b> <a href="https://arxiv.org/abs/2209.04851" target="_blank" style="color:#002FA7"><b>OpenMixup</b> (arXiv'22)</a>, <a href="https://arxiv.org/abs/2111.15454" target="_blank" style="color:#002FA7"><b>SAMix</b> (arXiv'22)</a>, <a href="https://arxiv.org/abs/2310.03013" target="_blank" style="color:#002FA7"><b>SemiReward</b> (ICLR'24)</a></li>
-    <li style="margin-bottom: 8px;"><b>Efficient Model Architectures:</b> <a href="https://arxiv.org/abs/2211.03295" target="_blank" style="color:#002FA7"><b>MogaNet</b> (ICLR'24)</a>, <a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#002FA7"><b>MergeVQ</b> (CVPR'25)</a></li>
-    <li style="margin-bottom: 8px;"><b>(Multi-task) Optimizers:</b> <a href="https://huggingface.co/papers/2410.06373" target="_blank" style="color:#002FA7"><b>BOCB</b> (arXiv'24)</a>, <a href="https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7"><b>SGG</b> (ACL'25 Main)</a>, <a href="https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7"><b>Rep-MTL</b></a></li>
-</ul>
+<div class="interests-section">
+    <div class="interest-category">
+        <span class="interest-category-title">Data-efficient Learning</span>
+        <div class="interests-tags">
+            <a href="https://arxiv.org/abs/2209.04851" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> OpenMixup (arXiv'22)</a>
+            <a href="https://arxiv.org/abs/2111.15454" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> SAMix (arXiv'22)</a>
+            <a href="https://arxiv.org/abs/2310.03013" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> SemiReward (ICLR'24)</a>
+        </div>
+    </div>
+    <div class="interest-category">
+        <span class="interest-category-title">Efficient Model Architectures</span>
+        <div class="interests-tags">
+            <a href="https://arxiv.org/abs/2211.03295" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> MogaNet (ICLR'24)</a>
+            <a href="https://huggingface.co/papers/2504.00999" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> MergeVQ (CVPR'25)</a>
+        </div>
+    </div>
+    <div class="interest-category">
+        <span class="interest-category-title">(Multi-task) Optimizers</span>
+        <div class="interests-tags">
+            <a href="https://huggingface.co/papers/2410.06373" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> BOCB (arXiv'24)</a>
+            <a href="https://huggingface.co/papers/2506.01049" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> SGG (ACL'25 Main)</a>
+            <a href="https://huggingface.co/papers/2506.01049" target="_blank" class="paper-tag"><i class="fas fa-file-alt"></i> Rep-MTL</a>
+        </div>
+    </div>
+</div>
 
 
 <style>
