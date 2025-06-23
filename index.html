@@ -25,6 +25,39 @@
     vertical-align: top;
     font-size: 1.03em;
   }
+
+  .dashed-underline-me {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  /* News Section Styling */
+  .news-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .news-item {
+    background-color: #ffffff;
+    border-left: 2px solid #9F6821;
+    padding: 8px 15px;
+    margin-bottom: -4px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  .news-item:hover {
+    transform: translateY(0px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .news-date {
+    font-weight: bold;
+    color: #9F6821;
+    margin-right: 10px;
+  }
 </style>
 
 </head>
@@ -39,10 +72,10 @@
 
 <table class="profile-table"><tr><td>
 <a href="./" style="color:#002FA7"><img src="./Files/Profile_Home.jpg" alt="" height="214px" /></a>&nbsp;</td>
-<td align="left"><p><a href="./" style="color:#000000"><font size="5">WANG, Ze Dong 王泽栋</font></a><br />
-<i> <a href="https://cse.hkust.edu.hk/admin/factsheet/" target="_blank" style="color:#002FA7">Department of Computer Science and Engineering (CSE)</a> </i>
+<td align="left"><p><a href="./" style="color:#000000"><font size="5">WANG Ze Dong (王泽栋)</font></a><br />
+<i><a href="https://cse.hkust.edu.hk/admin/factsheet/" target="_blank" style="color:#002FA7">Department of Computer Science and Engineering (CSE)</a> </i>
 <br />
-<i> <a href="https://hkust.edu.hk" target="_blank" style="color:#002FA7">The Hong Kong University of Science and Technology (HKUST)</a> </i>
+<i><a href="https://hkust.edu.hk" target="_blank" style="color:#002FA7">The Hong Kong University of Science and Technology (HKUST)</a> </i>
 
 <br />
 <div style="display:flex; flex-direction:column; gap:3px;">
@@ -70,7 +103,7 @@
     border-radius: 5px;
   }
   .nav-link:hover {
-    background-color: #e6eeff;
+    background-color: #fafbff;
   }
 </style>
 
@@ -105,31 +138,29 @@ His research centers on deep learning, computer vision, and multi-task learning,
 
 
 <A NAME="News"><h2>News</h2></A>
-  <!-- <div style="height:200px;overflow-y:auto;background:#ffffff;"> -->
   <div style="height:320px;overflow-y:auto;">
-  <ul style="padding-left: 20px;">
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2025.05.20]</font> </b> I was recognized as one of the <i>Notable Reviewers</i> at <b><a href="https://iclr.cc/Conferences/2025/Reviewers" target="_blank" style="color:#000000">ICLR 2025 <font color="#b80000">(rate: 2.6%, 473/18323)</font></a></b>. Happy to contribute to the community! Huge thanks to the organizers for their dedication.</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2025.05.16]</font> </b> One paper on <i>(M)LLM optimizers</i>, <i><a href="https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7"> <b>SGG</b></a></i>, is accepted at <b><a href="https://2025.aclweb.org" target="_blank" style="color:#000000">ACL 2025 main</a></b>. Congrats to all co-authors! </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2025.04.04]</font> </b> One co-authored paper on <i>visual generation & representation</i>, <i><a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#002FA7"> <b>MergeVQ</b></a></i>, is accepted at <b><a href="https://cvpr.thecvf.com/Conferences/2025" target="_blank" style="color:#000000">CVPR 2025</a></b>, <a href="https://huggingface.co/papers/date/2025-04-03" target="_blank" style="color:#002FA7"><b>ranking 1st</b> in 🤗Hugging Face Daily Papers</a>, and <a href="https://huggingface.co/papers/week/2025-W14" target="_blank" style="color:#002FA7"><b>ranking 4th</b> in Weekly Papers.</a> Congrats to all co-authors! </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.12.12]</font> </b> One co-authored paper on <i>low-level vision</i>, <i><a href="https://arxiv.org/abs/2503.01136" target="_blank" style="color:#002FA7"> <b>PGHHNet</b></a></i>, is accepted at <b><a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank" style="color:#000000">AAAI 2025</a></b>. Congrats to all co-authors!</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.11.04]</font> </b> I was recognized as an <i>Outstanding Reviewers</i> at <b><a href="https://bmvc2024.org/people/reviewers/" target="_blank" style="color:#000000">BMVC 2024 <font color="#b80000">(rate: 19.3%, 166/860)</font></a></b>. Happy to contribute to the community! Huge thanks to the organizers for their dedication.</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.11.04]</font> </b> I was recognized as an <i>Outstanding Reviewer</i> at <b><a href="https://2024.acmmm.org/outstanding-ac-reviewer" target="_blank" style="color:#000000">ACM MM 2024 <font color="#b80000">(139/x)</font></a></b>. Happy to contribute to the community! Huge thanks to the organizers for their dedication.</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.10.10]</font> </b> One paper on <i>vision backbones & optimizers</i>, <i><a href="https://arxiv.org/abs/2410.06373" target="_blank" style="color:#002FA7"><b>BOCB</b></a></i>, is released. Welcome to visit <a href="https://huggingface.co/papers/2410.06373" target="_blank" style="color:#002FA7">Hugging Face</a> and <a href="https://bocb-ai.github.io" target="_blank" style="color:#002FA7">Project</a> page.</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.09.24]</font> </b> I was recognized as an <i>Outstanding Reviewer</i> at <b><a href="https://eccv.ecva.net/Conferences/2024/Reviewers#all-outstanding-reviewers" target="_blank" style="color:#000000">ECCV 2024 <font color="#b80000">(rate: 2.7%, 198/7293)</font></a></b>. Happy to contribute to the community! Huge thanks to the organizers for their dedication.</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.04.16]</font> </b> One co-authored paper on <i>long sequence modeling</i>, <i><a href="https://arxiv.org/abs/2404.11163" target="_blank" style="color:#002FA7"> <b>LongVQ</b></a></i>, is accepted at <b><a href="https://ijcai24.org" target="_blank" style="color:#000000">IJCAI 2024</a></b>. Congrats to <a href="https://scholar.google.com/citations?hl=en&user=EwMGZsgAAAAJ" target="_blank" style="color:#002FA7">Zicheng Liu</a>! </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.01.16]</font> </b> One paper on <i>vision backbone</i>, <i><a href="https://arxiv.org/abs/2211.03295" target="_blank" style="color:#002FA7"> <b>MogaNet</b></a></i>, is accepted at <b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2024</a></b>. <a href="https://github.com/Westlake-AI/MogaNet" target="_blank" style="color:#002FA7">Code & weights</a> (220 stars) are released!</li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.01.16]</font> </b> One co-authored paper on <i>semi-sup learning</i>, <i><a href="https://arxiv.org/abs/2310.03013" target="_blank" style="color:#002FA7"> <b>SemiReward</b></a></i>, is accepted at <b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2024</a></b>. Congrats to <a href="https://scholar.google.com/citations?hl=en&user=SKTQTXwAAAAJ" target="_blank" style="color:#002FA7">Siyuan Li</a>! </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2024.01.09]</font> </b> I am invited to serve as an <i> emergency reviewer</i> at <b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2024</a></b> <b><a href="https://iclr.cc/Conferences/2024/CallForTinyPapers" target="_blank" style="color:#000000">(TinyPapers)</a></b>. It will be held in Vienna, Austria. </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2023.09.31]</font> </b> One co-authored paper on <i>video prediction</i>, <i><a href="https://arxiv.org/abs/2306.11249" target="_blank" style="color:#002FA7"> <b>OpenSTL</b></a></i>, is accepted at <b><a href="https://neurips.cc/Conferences/2023" target="_blank" style="color:#000000">NeurIPS 2023</a></b>. Congrats to <a href="https://scholar.google.com/citations?hl=en&user=6kTV6aMAAAAJ" target="_blank" style="color:#002FA7">Cheng Tan</a>! </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2023.06.25]</font> </b> Got my B.Eng. degree from Huazhong University of Science and Technology! Special thanks to my undergraduate supervisor Prof. <a href="https://scholar.google.com/citations?hl=en&user=qNCTLV0AAAAJ" target="_blank" style="color:#002FA7">Xinggang Wang</a> for his generous support!</li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2022.09.11]</font> </b> One preprint on <i>data augmentation</i>, <i><a href="https://arxiv.org/abs/2209.04851" target="_blank" style="color:#002FA7"><b>OpenMixup</b></a></i>, is presented for vision tasks. This is also my first arXiv paper!</li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2022.09.11]</font> </b> Maintain an open-source repository, <i><a href="https://github.com/Westlake-AI/openmixup" target="_blank" style="color:#002FA7"><b>OpenMixup</b></a></i> (648 stars), for both supervised, semi- and self-supervised visual representation learning based on PyTorch. On updating! </li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2022.07.06]</font> </b> Fortunate to become <i>visiting student</i> at Westlake University. </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2021.09.01]</font> </b> Fortunate to become <i>research intern</i> under the supervision of Prof. <a href="https://scholar.google.com/citations?hl=en&user=qNCTLV0AAAAJ" target="_blank" style="color:#002FA7">Xinggang Wang</a>. </li></li>
-    <li style="margin-bottom: 5px;"><b> <font color="#9F6821">[2021.06.01]</font> </b> Fortunate to become <i>research intern</i> in <a href="https://mmlab.siat.ac.cn" target="_blank" style="color:#002FA7"> SIAT-MMLab</a> at Shenzhen Institute of Advanced Technology, CAS. </li></li>
-
-</ul>
-</div>
+    <ul class="news-list">
+      <li class="news-item"><span class="news-date">[2025.05.20]</span>I was listed as an <i>Notable Reviewer</i> at <b><a href="https://iclr.cc/Conferences/2025/Reviewers" target="_blank" style="color:#000000">ICLR 2025 <font color="#b80000">(rate: 2.6%, 473/18323)</font></a></b>. Happy to contribute to ICLR!</li>
+      <li class="news-item"><span class="news-date">[2025.05.16]</span>One paper on <i>(M)LLM optimizers</i>, <i><a href="https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7"> <b>SGG</b></a></i>, is accepted at <b><a href="https://2025.aclweb.org" target="_blank" style="color:#000000">ACL 2025 main</a></b>. Congrats to all co-authors! </li>
+      <li class="news-item"><span class="news-date">[2025.04.04]</span>One co-authored paper on <i>visual generation & representation learning</i>, <i><a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#002FA7"> <b>MergeVQ</b></a></i>, is accepted at <b><a href="https://cvpr.thecvf.com/Conferences/2025" target="_blank" style="color:#000000">CVPR 2025</a></b>, <a href="https://huggingface.co/papers/date/2025-04-03" target="_blank" style="color:#002FA7"><b>ranking 1st</b> in 🤗Hugging Face Daily Papers</a>, and <a href="https://huggingface.co/papers/week/2025-W14" target="_blank" style="color:#002FA7"><b>ranking 4th</b> in Weekly Papers.</a> Congrats to all co-authors! </li>
+      <li class="news-item"><span class="news-date">[2024.12.12]</span>One co-authored paper on <i>low-level vision</i>, <i><a href="https://arxiv.org/abs/2503.01136" target="_blank" style="color:#002FA7"> <b>PGHHNet</b></a></i>, is accepted at <b><a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank" style="color:#000000">AAAI 2025</a></b>. Congrats to all co-authors!</li>
+      <li class="news-item"><span class="news-date">[2024.11.04]</span>I was listed as an <i>Outstanding Reviewer</i> at <b><a href="https://bmvc2024.org/people/reviewers/" target="_blank" style="color:#000000">BMVC 2024 <font color="#b80000">(rate: 19.3%, 166/860)</font></a></b>. Happy to contribute to BMVC!</li>
+      <li class="news-item"><span class="news-date">[2024.11.04]</span>I was listed as an <i>Outstanding Reviewer</i> at <b><a href="https://2024.acmmm.org/outstanding-ac-reviewer" target="_blank" style="color:#000000">ACM MM 2024 <font color="#b80000">(139/x)</font></a></b>. Happy to contribute to ACM MM!</li>
+      <li class="news-item"><span class="news-date">[2024.10.10]</span>One paper on <i>neural nets & optimizers</i>, <i><a href="https://arxiv.org/abs/2410.06373" target="_blank" style="color:#002FA7"><b>BOCB</b></a></i>, is released. Welcome to visit <a href="https://huggingface.co/papers/2410.06373" target="_blank" style="color:#002FA7">Hugging Face</a> and <a href="https://bocb-ai.github.io" target="_blank" style="color:#002FA7">Project</a> page.</li>
+      <li class="news-item"><span class="news-date">[2024.09.24]</span>I was listed as an <i>Outstanding Reviewer</i> at <b><a href="https://eccv.ecva.net/Conferences/2024/Reviewers#all-outstanding-reviewers" target="_blank" style="color:#000000">ECCV 2024 <font color="#b80000">(rate: 2.7%, 198/7293)</font></a></b>. Happy to contribute to ECCV!</li>
+      <li class="news-item"><span class="news-date">[2024.04.16]</span>One co-authored paper on <i>sequence modeling</i>, <i><a href="https://arxiv.org/abs/2404.11163" target="_blank" style="color:#002FA7"> <b>LongVQ</b></a></i>, is accepted at <b><a href="https://ijcai24.org" target="_blank" style="color:#000000">IJCAI 2024</a></b>. Congrats to <a href="https://scholar.google.com/citations?hl=en&user=EwMGZsgAAAAJ" target="_blank" style="color:#002FA7">Zicheng Liu</a>! </li>
+      <li class="news-item"><span class="news-date">[2024.01.16]</span>One paper on <i>vision backbone</i>, <i><a href="https://arxiv.org/abs/2211.03295" target="_blank" style="color:#002FA7"> <b>MogaNet</b></a></i>, is accepted at <b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2024</a></b>. <a href="https://github.com/Westlake-AI/MogaNet" target="_blank" style="color:#002FA7">Code & weights</a> (220 stars) are released!</li>
+      <li class="news-item"><span class="news-date">[2024.01.16]</span>One co-authored paper on <i>semi-sup learning</i>, <i><a href="https://arxiv.org/abs/2310.03013" target="_blank" style="color:#002FA7"> <b>SemiReward</b></a></i>, is accepted at <b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2024</a></b>. Congrats to <a href="https://scholar.google.com/citations?hl=en&user=SKTQTXwAAAAJ" target="_blank" style="color:#002FA7">Siyuan Li</a>! </li>
+      <li class="news-item"><span class="news-date">[2024.01.09]</span>I am invited to serve as an <i> emergency reviewer</i> at <b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2024</a></b> <b><a href="https://iclr.cc/Conferences/2024/CallForTinyPapers" target="_blank" style="color:#000000">(TinyPapers)</a></b>. It will be held in Vienna, Austria. </li>
+      <li class="news-item"><span class="news-date">[2023.09.31]</span>One co-authored paper on <i>video prediction</i>, <i><a href="https://arxiv.org/abs/2306.11249" target="_blank" style="color:#002FA7"> <b>OpenSTL</b></a></i>, is accepted at <b><a href="https://neurips.cc/Conferences/2023" target="_blank" style="color:#000000">NeurIPS 2023</a></b>. Congrats to <a href="https://scholar.google.com/citations?hl=en&user=6kTV6aMAAAAJ" target="_blank" style="color:#002FA7">Cheng Tan</a>! </li>
+      <li class="news-item"><span class="news-date">[2023.06.25]</span>Got my B.Eng. degree from Huazhong University of Science and Technology! Special thanks to my undergraduate supervisor Prof. <a href="https://scholar.google.com/citations?hl=en&user=qNCTLV0AAAAJ" target="_blank" style="color:#002FA7">Xinggang Wang</a> for his generous support!</li>
+      <li class="news-item"><span class="news-date">[2022.09.11]</span>One preprint on <i>data augmentation</i>, <i><a href="https://arxiv.org/abs/2209.04851" target="_blank" style="color:#002FA7"><b>OpenMixup</b></a></i>, is presented for vision tasks. This is also my first arXiv paper!</li>
+      <li class="news-item"><span class="news-date">[2022.09.11]</span>Maintain an open-source repository, <i><a href="https://github.com/Westlake-AI/openmixup" target="_blank" style="color:#002FA7"><b>OpenMixup</b></a></i> (648 stars), for both supervised, semi- and self-supervised visual representation learning based on PyTorch. On updating! </li>
+      <li class="news-item"><span class="news-date">[2022.07.06]</span>Fortunate to become <i>visiting student</i> at Westlake University. </li>
+      <li class="news-item"><span class="news-date">[2021.09.01]</span>Fortunate to become <i>research intern</i> under the supervision of Prof. <a href="https://scholar.google.com/citations?hl=en&user=qNCTLV0AAAAJ" target="_blank" style="color:#002FA7">Xinggang Wang</a>. </li>
+      <li class="news-item"><span class="news-date">[2021.06.01]</span>Fortunate to become <i>research intern</i> in <a href="https://mmlab.siat.ac.cn" target="_blank" style="color:#002FA7"> SIAT-MMLab</a> at Shenzhen Institute of Advanced Technology, CAS. </li>
+    </ul>
+  </div>
 
 
 <A NAME="Interests"><h2>Research Interests</h2></A>
@@ -260,7 +291,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
 }
 
 .pub-title {
-    font-size: 15px; /* Slightly larger than normal text */
+    font-size: 15.5px; /* Slightly larger than normal text */
     line-height: 1.3;
     font-weight: bold;
     font-family: Georgia, serif;
@@ -287,7 +318,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/arXiv_2024_BOCB.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"> <a href= "https://huggingface.co/papers/2410.06373" target="_blank" style="color:#002FA7">Unveiling the Backbone-Optimizer Coupling Bias in Visual Representation Learning</a></div>
-        <i> Siyuan Li*, Juanxi Tian*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u>*</a></b>, Luyuan Zhang, Zicheng Liu, Weiyang Jin, Yang Liu, Baigui Sun, Stan Z. Li† </a></i><br><i><b>arXiv, 2024</b></i><br>
+        <i> Siyuan Li*, Juanxi Tian*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang*</a></b>, Luyuan Zhang, Zicheng Liu, Weiyang Jin, Yang Liu, Baigui Sun, Stan Z. Li† </a></i><br><i><b>arXiv, 2024</b></i><br>
         [<a href="https://arxiv.org/abs/2410.06373" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://huggingface.co/papers/2410.06373" target="_blank" style="color:#002FA7">🤗HF</a>]
         [<a href="https://bocb-ai.github.io" target="_blank" style="color:#002FA7">Project</a>]
@@ -299,7 +330,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/arXiv_2024_SEMA.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" height="104px"/>&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href= "https://huggingface.co/papers/2402.09240" target="_blank" style="color:#002FA7">Switch EMA: A Free Lunch for Better Flatness and Sharpness</a></div>
-        <i> Siyuan Li*, Zicheng Liu*, Juanxi Tian*, Ge Wang*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Weiyang Jin, Di Wu, Cheng Tan, Tao Lin, Yang Liu, Baigui Sun, Stan Z. Li† </a></i><br><i><b>arXiv, 2024</b></i><br>
+        <i> Siyuan Li*, Zicheng Liu*, Juanxi Tian*, Ge Wang*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Weiyang Jin, Di Wu, Cheng Tan, Tao Lin, Yang Liu, Baigui Sun, Stan Z. Li† </a></i><br><i><b>arXiv, 2024</b></i><br>
         [<a href="https://arxiv.org/abs/2402.09240" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://huggingface.co/papers/2402.09240" target="_blank" style="color:#002FA7">🤗HF</a>]
         [<a href="https://github.com/Westlake-AI/MogaNet" target="_blank" style="color:#002FA7">Code</a>]
@@ -310,7 +341,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/arXiv_2023_MM_Survey.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href= "https://arxiv.org/abs/2401.00897" target="_blank" style="color:#002FA7">Masked Modeling for Self-supervised Representation Learning on Vision and Beyond</a></div>
-        <i> Siyuan Li*, Luyuan Zhang*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Di Wu, Lirong Wu, Zicheng Liu, Jun Xia, Cheng Tan, Yang Liu, Baigui Sun, Stan Z. Li† </a></i><br><i><b>arXiv, 2023</b></i><br>
+        <i> Siyuan Li*, Luyuan Zhang*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Di Wu, Lirong Wu, Zicheng Liu, Jun Xia, Cheng Tan, Yang Liu, Baigui Sun, Stan Z. Li† </a></i><br><i><b>arXiv, 2023</b></i><br>
         [<a href= "https://arxiv.org/abs/2401.00897" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/Lupin1998/Awesome-MIM" target="_blank" style="color:#002FA7">Code</a>]
         [<a href="./Files/arXiv_2023_MIMSurvey_bibtex" target="_blank" style="color:#002FA7">BibTeX</a>]
@@ -330,7 +361,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
   <img src="./Teasers/ACL25_SGG.pdf" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" height="122px"/>&nbsp;</td>
   <td align="left"><p>
       <div class="pub-title"><a href= "https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7">Taming LLMs by Scaling Learning Rates with Gradient Grouping</a></div>
-      <i> Siyuan Li*, Juanxi Tian* <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u>*</a></b>, Xin Jin, Zicheng Liu, Wentao Zhang, Dan Xu </a></i><br><i><b><a href="https://2025.aclweb.org" target="_blank" style="color:#000000">The 63rd Annual Meeting of the Association for Computational Linguistics (ACL Main), 2025</a></b></i><br>
+      <i> Siyuan Li*, Juanxi Tian* <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang*</a></b>, Xin Jin, Zicheng Liu, Wentao Zhang, Dan Xu </a></i><br><i><b><a href="https://2025.aclweb.org" target="_blank" style="color:#000000">The 63rd Annual Meeting of the Association for Computational Linguistics (ACL Main), 2025</a></b></i><br>
       [<a href= "https://arxiv.org/abs/2506.01049" target="_blank" style="color:#002FA7">arXiv</a>]
       [<a href="https://huggingface.co/papers/2506.01049" target="_blank" style="color:#9F6821">🤗<b>HF DailyPapers Top-5</b></a>]
       [<a href="https://scalingopt.github.io/SGG/" target="_blank" style="color:#002FA7">Project</a>]
@@ -341,7 +372,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/ICLR24_MogaNet.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" height="120px"/>&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href= "https://iclr.cc/virtual/2024/poster/18447" target="_blank" style="color:#002FA7">MogaNet: Multi-order Gated Aggregation Network</a></div>
-        <i> Siyuan Li*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u>*</a></b>, Zicheng Liu, Cheng Tan, Haitao Lin, Di Wu, Zhiyuan Chen, Jiangbin Zheng, Stan Z. Li† </a></i><br><i><b><a href="https://iclr.cc" target="_blank" style="color:#000000">International Conference on Learning Representations (ICLR), 2024</a></b></i><br>
+        <i> Siyuan Li*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang*</a></b>, Zicheng Liu, Cheng Tan, Haitao Lin, Di Wu, Zhiyuan Chen, Jiangbin Zheng, Stan Z. Li† </a></i><br><i><b><a href="https://iclr.cc" target="_blank" style="color:#000000">International Conference on Learning Representations (ICLR), 2024</a></b></i><br>
         [<a href= "https://arxiv.org/abs/2211.03295" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/Westlake-AI/MogaNet" target="_blank" style="color:#002FA7">Code</a>]
         [<a href= "https://zhuanlan.zhihu.com/p/582542948" target="_blank" style="color:#002FA7">Zhihu</a>]
@@ -352,7 +383,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/ICML24_VQDNA.jpeg" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href="https://proceedings.mlr.press/v235/li24bm.html" target="_blank" style="color:#002FA7">VQDNA: Unleashing the Power of Vector Quantization for Genomic Sequence Modeling</a></div>
-        <i> Siyuan Li*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u>*</a></b>, Zicheng Liu, Di Wu, Cheng Tan, Jiangbin Zheng, Yufei Huang, Stan Z. Li† </a></i><br><i><b><a href="https://icml.cc" target="_blank" style="color:#000000">International Conference on Machine Learning (ICML), 2024</a></b></i><br>
+        <i> Siyuan Li*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang*</a></b>, Zicheng Liu, Di Wu, Cheng Tan, Jiangbin Zheng, Yufei Huang, Stan Z. Li† </a></i><br><i><b><a href="https://icml.cc" target="_blank" style="color:#000000">International Conference on Machine Learning (ICML), 2024</a></b></i><br>
         [<a href="https://arxiv.org/abs/2405.10812" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/Lupin1998/VQDNA" target="_blank" style="color:#002FA7">Code</a>]
         [<a href="./Files/icml_2024_VQDNA_bibtex" target="_blank" style="color:#002FA7">BibTeX</a>]
@@ -368,7 +399,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/CVPR25_MergeVQ.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" height="120px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a target="_blank" style="color:#b80000">[NEW!] </a><a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#002FA7">MergeVQ: A Unified Framework for Visual Generation and Representation with Disentangled Token Merging and Quantization</a></div>
-        <i>Siyuan Li*, Luyuan Zhang*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Juanxi Tian, Cheng Tan, Zicheng Liu, Chang Yu, Qingsong Xie, Haonan Lu, Haoqian Wang, Zhen Lei† </a></i><br><i><b><a href="https://icml.cc" target="_blank" style="color:#000000">IEEE/CVF Conference on Computer Vision (CVPR), 2025</a></b></i><br>
+        <i>Siyuan Li*, Luyuan Zhang*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Juanxi Tian, Cheng Tan, Zicheng Liu, Chang Yu, Qingsong Xie, Haonan Lu, Haoqian Wang, Zhen Lei† </a></i><br><i><b><a href="https://icml.cc" target="_blank" style="color:#000000">IEEE/CVF Conference on Computer Vision (CVPR), 2025</a></b></i><br>
         [<a href="https://arxiv.org/abs/2504.00999" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#9F6821">🤗<b>HF DailyPapers Top-1</b></a>]
         [<a href="https://apexgen-x.github.io/MergeVQ/" target="_blank" style="color:#002FA7">Project</a>]
@@ -379,7 +410,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/ICML24_CHELA.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href="https://proceedings.mlr.press/v235/liu24ak.html" target="_blank" style="color:#002FA7">Short-Long Convolutions Help Hardware-Efficient Linear Attention to Focus on Long Sequences</a></div>
-        <i> Zicheng Liu, Siyuan Li, Li Wang, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Yunfan Liu, Stan Z. Li† </a></i><br><i><b><a href="https://icml.cc" target="_blank" style="color:#000000">International Conference on Machine Learning (ICML), 2024</a></b></i><br>
+        <i> Zicheng Liu, Siyuan Li, Li Wang, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Yunfan Liu, Stan Z. Li† </a></i><br><i><b><a href="https://icml.cc" target="_blank" style="color:#000000">International Conference on Machine Learning (ICML), 2024</a></b></i><br>
         [<a href="https://arxiv.org/abs/2406.08128" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/pone7/CHELA" target="_blank" style="color:#002FA7">Code</a>]
         [<a href="./Files/icml_2024_CHELA_bibtex" target="_blank" style="color:#002FA7">BibTeX</a>]
@@ -390,7 +421,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/IJCAI24_LongVQ.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href="https://www.ijcai.org/proceedings/2024/510" target="_blank" style="color:#002FA7">LongVQ: Long Sequence Modeling with Vector Quantization on Structured Memory</a></div>
-        <i> Zicheng Liu, Li Wang, Siyuan Li, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Haitao Lin, Stan Z. Li† </a></i><br><i><b><a href="https://ijcai24.org" target="_blank" style="color:#000000">International Joint Conference on Artificial Intelligence (IJCAI), 2024</a></b></i><br>
+        <i> Zicheng Liu, Li Wang, Siyuan Li, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Haitao Lin, Stan Z. Li† </a></i><br><i><b><a href="https://ijcai24.org" target="_blank" style="color:#000000">International Joint Conference on Artificial Intelligence (IJCAI), 2024</a></b></i><br>
         [<a href="https://arxiv.org/abs/2404.11163" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/pone7/CHELA" target="_blank" style="color:#002FA7">Code</a>]
         [<a href="./Files/ijcai_2024_LongVQ_bibtex" target="_blank" style="color:#002FA7">BibTeX</a>]
@@ -401,7 +432,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/ICLR24_SemiReward.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href= "https://iclr.cc/virtual/2024/poster/18245" target="_blank" style="color:#002FA7">SemiReward: A General Reward Model for Semi-supervised Learning</a></div>
-        <i> Siyuan Li*, Weiyang Jin*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Fang Wu, Zicheng Liu, Cheng Tan, Stan Z. Li† </a></i><br><i><b><a href="https://iclr.cc" target="_blank" style="color:#000000">International Conference on Learning Representations (ICLR), 2024</a></b></i><br>
+        <i> Siyuan Li*, Weiyang Jin*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Fang Wu, Zicheng Liu, Cheng Tan, Stan Z. Li† </a></i><br><i><b><a href="https://iclr.cc" target="_blank" style="color:#000000">International Conference on Learning Representations (ICLR), 2024</a></b></i><br>
         [<a href= "https://arxiv.org/abs/2310.03013" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/Westlake-AI/SemiReward" target="_blank" style="color:#002FA7">Code</a>]
         [<a href="./Files/iclr_2024_SemiReward_bibtex" target="_blank" style="color:#002FA7">BibTeX</a>]
@@ -412,7 +443,7 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
     <img src="./Teasers/NeurIPS23_OpenSTL.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="220px" />&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href= "https://papers.nips.cc/paper_files/paper/2023/hash/dcbff44d11130e75d09d3930411c23e1-Abstract-Datasets_and_Benchmarks.html" target="_blank" style="color:#002FA7">OpenSTL: A Comprehensive Benchmark of Spatio-Temporal Predictive Learning</a></div>
-        <i> Cheng Tan*, Siyuan Li*, Zhangyang Gao, Wenfei Guan, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" style="color:#000000"><u>Zedong Wang</u></a></b>, Zicheng Liu, Lirong Wu, Stan Z. Li† </a></i><br><i><b><a href="https://neurips.cc/Conferences/2023" target="_blank" style="color:#000000">Advances in Neural Information Processing Systems (NeurIPS), 2023</a></b></i><br>
+        <i> Cheng Tan*, Siyuan Li*, Zhangyang Gao, Wenfei Guan, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="dashed-underline-me">Zedong Wang</a></b>, Zicheng Liu, Lirong Wu, Stan Z. Li† </a></i><br><i><b><a href="https://neurips.cc/Conferences/2023" target="_blank" style="color:#000000">Advances in Neural Information Processing Systems (NeurIPS), 2023</a></b></i><br>
         [<a href= "https://arxiv.org/abs/2306.11249" target="_blank" style="color:#002FA7">arXiv</a>]
         [<a href="https://github.com/chengtan9907/OpenSTL" target="_blank" style="color:#002FA7">Code</a>]
         [<a href= "https://zhuanlan.zhihu.com/p/640271275" target="_blank" style="color:#002FA7">Zhihu</a>]
