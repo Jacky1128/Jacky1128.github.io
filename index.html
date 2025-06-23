@@ -58,6 +58,57 @@
     color: #9F6821;
     margin-right: 10px;
   }
+
+  /* Awards Section Redesign */
+  .awards-grid {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 5px;
+  }
+
+  .award-card {
+      background-color: #fdfdff;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #e8e8e8;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .award-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      border-color: #002FA7;
+  }
+
+  .award-card .icon {
+      font-size: 2.2em;
+      color: #002FA7;
+      margin-bottom: 12px;
+  }
+
+  .award-card .conference {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+  }
+
+  .award-card .details {
+      font-size: 0.95em;
+      color: #555;
+      line-height: 1.4;
+  }
+
+  .award-card .details font {
+      font-weight: bold;
+  }
 </style>
 
 </head>
@@ -253,12 +304,35 @@ Currently, I focus mostly on Computer Vision, Multi-task and Multi-modal Learnin
 <A NAME="Awards"><h2>Selected Awards and Honors</h2></A>
 <p style="line-height: 0.1;">&nbsp; </p>
 
-<b>Outstanding/Notable Reviewer Award: </b>
-<ul>
-    <li style="margin-bottom: 9px;">The 13th International Conference on Learning Representations <a href="https://iclr.cc/Conferences/2025/Reviewers" target="_blank" style="color:#000000"><b>(ICLR 2025)</b></a>, <b><font color="#b80000"> (rate: 2.6%, 473/18323)</font></b>. </li>
-    <li style="margin-bottom: 9px;">The 18th European Conference on Computer Vision <a href="https://eccv.ecva.net/Conferences/2024/Reviewers#all-outstanding-reviewers" target="_blank" style="color:#000000"><b>(ECCV 2024)</b></a>, <b><font color="#b80000"> (rate: 2.7%, 198/7293)</font></b>. </li>
-    <li style="margin-bottom: 9px;">The 32nd ACM International Conference on Multimedia <a href="https://2024.acmmm.org/outstanding-ac-reviewer" target="_blank" style="color:#000000"><b>(ACM MM 2024)</b></a>, <b><font color="#b80000"> (rate: 139/x)</font></b>. </li>
-    <li style="margin-bottom: 9px;">The 35th British Machine Vision Conference <a href="https://bmvc2024.org/people/reviewers/" target="_blank" style="color:#000000"><b>(BMVC 2024)</b></a>, <b><font color="#b80000"> (rate: 19.3%, 166/860)</font></b></li>
+<ul class="awards-grid">
+    <li class="award-card">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div>
+            <div class="conference"><a href="https://iclr.cc/Conferences/2025/Reviewers" target="_blank" style="color:#000000">ICLR 2025</a></div>
+            <div class="details">Notable Reviewer<br><font color="#b80000">(Top 2.6%)</font></div>
+        </div>
+    </li>
+    <li class="award-card">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div>
+            <div class="conference"><a href="https://eccv.ecva.net/Conferences/2024/Reviewers#all-outstanding-reviewers" target="_blank" style="color:#000000">ECCV 2024</a></div>
+            <div class="details">Outstanding Reviewer<br><font color="#b80000">(Top 2.7%)</font></div>
+        </div>
+    </li>
+    <li class="award-card">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div>
+            <div class="conference"><a href="https://2024.acmmm.org/outstanding-ac-reviewer" target="_blank" style="color:#000000">ACM MM 2024</a></div>
+            <div class="details">Outstanding Reviewer<br><font color="#b80000">(139/x)</font></div>
+        </div>
+    </li>
+    <li class="award-card">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div>
+            <div class="conference"><a href="https://bmvc2024.org/people/reviewers/" target="_blank" style="color:#000000">BMVC 2024</a></div>
+            <div class="details">Outstanding Reviewer<br><font color="#b80000">(Top 19.3%)</font></div>
+        </div>
+    </li>
 </ul>
 
 
