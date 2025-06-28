@@ -496,8 +496,6 @@ His research centers on deep learning and efficient multi-task learning, with a 
 
 <A NAME="Publications"><h2>Publications</h2></A>
 
-
-
 <style>
 .imgtable {
   margin-bottom: 25px;
@@ -530,9 +528,88 @@ His research centers on deep learning and efficient multi-task learning, with a 
 .publications-list > ul {
   padding-left: 4px; 
 }
+
+/* Publication Section Headers */
+.pub-section-header {
+  display: flex;
+  align-items: center;
+  padding: 14px 22px;
+  border-radius: 10px;
+  margin: 25px 0 18px 0;
+  font-size: 1.05em;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.pub-section-icon {
+  font-size: 1.2em;
+  margin-right: 14px;
+}
+
+.pub-section-title {
+  flex: 1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.pub-section-count {
+  padding: 5px 14px;
+  border-radius: 16px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* Morandi color scheme for different sections */
+.pub-section-header.first-author {
+  background-color: rgba(138, 147, 156, 0.12);
+  color: #5a6570;
+  border-color: rgba(138, 147, 156, 0.2);
+}
+
+.pub-section-header.first-author .pub-section-icon {
+  color: #6b7280;
+}
+
+.pub-section-header.first-author .pub-section-count {
+  background-color: rgba(138, 147, 156, 0.15);
+  color: #4b5563;
+}
+
+.pub-section-header.co-author {
+  background-color: rgba(138, 147, 156, 0.12);
+  color: #5a6570;
+  border-color: rgba(138, 147, 156, 0.2);
+}
+
+.pub-section-header.co-author .pub-section-icon {
+  color: #6b7280;
+}
+
+.pub-section-header.co-author .pub-section-count {
+  background-color: rgba(138, 147, 156, 0.15);
+  color: #4b5563;
+}
+
+.pub-section-header.preprints {
+  background-color: rgba(138, 147, 156, 0.12);
+  color: #5a6570;
+  border-color: rgba(138, 147, 156, 0.2);
+}
+
+.pub-section-header.preprints .pub-section-icon {
+  color: #6b7280;
+}
+
+.pub-section-header.preprints .pub-section-count {
+  background-color: rgba(138, 147, 156, 0.15);
+  color: #4b5563;
+}
 </style>
 
-<p><b>Conferences (As First Author):</b> </p>
+<div class="pub-section-header first-author">
+  <i class="fas fa-star pub-section-icon"></i>
+  <span class="pub-section-title">Conferences (As First Author)</span>
+  <span class="pub-section-count">4 Papers</span>
+</div>
 <font size="3" class="publications-list"> 
 <ul>
 
@@ -593,7 +670,11 @@ His research centers on deep learning and efficient multi-task learning, with a 
 
 </ul>
 
-<p><b>Conferences (As Co-author):</b> </p>
+<div class="pub-section-header co-author">
+  <i class="fas fa-users pub-section-icon"></i>
+  <span class="pub-section-title">Conferences (As Co-author)</span>
+  <span class="pub-section-count">5 Papers</span>
+</div>
 <font size="3" class="publications-list"> 
 <ul>
 
@@ -671,7 +752,11 @@ His research centers on deep learning and efficient multi-task learning, with a 
 </ul>
 
 
-<p><b>Selected Preprints:</b> </p>
+<div class="pub-section-header preprints">
+  <i class="fas fa-file-alt pub-section-icon"></i>
+  <span class="pub-section-title">Selected Preprints</span>
+  <span class="pub-section-count">2 Papers</span>
+</div>
 <font size="3" class="publications-list"> 
 <ul>
   <table class="imgtable"><tr><td>
