@@ -313,6 +313,24 @@
     text-decoration: none;
     border-bottom: 1px dashed;
   }
+
+  /* 统一行间距样式 - 从Short Bio到Fragments of Memories之间的所有文字内容 */
+  .unified-spacing, 
+  .unified-spacing p, 
+  .unified-spacing div, 
+  .unified-spacing li,
+  .edu-details,
+  .pub-authors,
+  .pub-venue,
+  .memory-caption,
+  .news-item {
+    line-height: 1.5 !important;
+  }
+  
+  /* 特别调整News部分的间距，使其与其他部分保持一致 */
+  .news-item {
+    margin-bottom: -10px !important; /* 调整负边距为小正边距 */
+  }
 </style>
 
 </head>
@@ -385,7 +403,7 @@ Email: zedong.wang@connect.ust.hk (preferred); zwangmw@cse.ust.hk; wangzedong@we
 
 
 <A NAME="Short Bio"><h2>Short Bio</h2></A>
-<div style="text-align:justify; line-height:144%">
+<div class="unified-spacing" style="text-align:justify">
 Zedong (Jacky) is currently a first-year PhD student in Computer Science and Engineering (<a href="https://cse.hkust.edu.hk" target="_blank" style="color:#002FA7">CSE</a>) at The Hong Kong University of Science and Technology (<a href="https://hkust.edu.hk" target="_blank" style="color:#002FA7">HKUST</a>), 
 advised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=OuSPv-AAAAAJ" target="_blank" style="color:#002FA7">Dan Xu</a>. Prior to this, he served as a visiting student at <a href="https://en.westlake.edu.cn" target="_blank" style="color:#002FA7">Westlake University</a>, 
 advised by Chair Prof. <a href="https://scholar.google.com/citations?hl=en&user=Y-nyLGIAAAAJ" target="_blank" style="color:#002FA7">Stan Z. Li</a> (IEEE Fellow, IAPR Fellow).
@@ -400,12 +418,12 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 
 
 <A NAME="News"><h2>News</h2></A>
-<div style="height:276px;overflow-y:auto;margin-top:-6px;">
+<div style="height:230px;overflow-y:auto;margin-top:-8px;">
     <ul class="news-list">
       <li class="news-item"><span class="news-date">[2025.07.24]</span>One paper on <i>Multi-task Learning</i>, <i><a href="https://jacky1128.github.io/RepMTL/" target="_blank" style="color:#002FA7"> <b>Rep-MTL</b></a></i>, got accepted at <b><a href="https://iccv.thecvf.com/Conferences/2025" target="_blank" style="color:#000000">ICCV 2025 (<font color="#b80000">Highlight</font>)</a></b>, with final ratings <b>5/5/6</b>.</li>
       <li class="news-item"><span class="news-date">[2025.05.20]</span>I was recognized as a <i>Notable Reviewer</i> at <b><a href="https://iclr.cc/Conferences/2025/Reviewers" target="_blank" style="color:#000000">ICLR 2025 (<font color="#b80000">rate: 2.6%, 473/18323</font>)</a></b>.</li>
       <li class="news-item"><span class="news-date">[2025.05.16]</span>One paper on <i>(M)LLM optimizers</i>, <i><a href="https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7"> <b>SGG</b></a></i>, got accepted at <b><a href="https://2025.aclweb.org" target="_blank" style="color:#000000">ACL 2025 (main)</a></b>. </li>
-      <li class="news-item"><span class="news-date">[2025.04.04]</span>One co-authored paper on <i>image generation & representation learning</i>, <i><a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#002FA7"> <b>MergeVQ</b></a></i>, got accepted at <b><a href="https://cvpr.thecvf.com/Conferences/2025" target="_blank" style="color:#000000">CVPR 2025</a></b>, <a href="https://huggingface.co/papers/date/2025-04-03" target="_blank" style="color:#002FA7"><b>ranking 1st</b> in Hugging Face DailyPapers</a>, and <a href="https://huggingface.co/papers/week/2025-W14" target="_blank" style="color:#002FA7"><b>ranking 4th</b> in Weekly Papers.</a> Congrats to all co-authors! </li>
+      <li class="news-item"><span class="news-date">[2025.04.04]</span>One co-authored paper on <i>image generation</i>, <i><a href="https://huggingface.co/papers/2504.00999" target="_blank" style="color:#002FA7"> <b>MergeVQ</b></a></i>, got accepted at <b><a href="https://cvpr.thecvf.com/Conferences/2025" target="_blank" style="color:#000000">CVPR 2025</a></b>。</li>
       <li class="news-item"><span class="news-date">[2024.12.12]</span>One co-authored paper on <i>low-level vision</i>, <i><a href="https://arxiv.org/abs/2503.01136" target="_blank" style="color:#002FA7"> <b>PGHHNet</b></a></i>, got accepted at <b><a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank" style="color:#000000">AAAI 2025</a></b>. Congrats to all co-authors!</li>
       <li class="news-item"><span class="news-date">[2024.11.04]</span>I was recognized as an <i>Outstanding Reviewer</i> at <b><a href="https://bmvc2024.org/people/reviewers/" target="_blank" style="color:#000000">BMVC 2024 (<font color="#b80000">rate: 19.3%, 166/860</font>)</a></b>.</li>
       <li class="news-item"><span class="news-date">[2024.11.04]</span>I was recognized as an <i>Outstanding Reviewer</i> at <b><a href="https://2024.acmmm.org/outstanding-ac-reviewer" target="_blank" style="color:#000000">ACM MM 2024 (<font color="#b80000">rate: 139/x</font>)</a></b>.</li>
@@ -488,7 +506,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 
 <p><b>Outstanding / Notable Reviewer Awards:</b> </p>
 <font size="3"> 
-<ul>
+<ul class="unified-spacing">
 
 <li>The 13th International Conference on Learning Representations <b>(<a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR 2025</a>)</b>, <font color="#b80000"> <b>Top 2.6% (473/18323)</b></font> <br />  </li>   
 <li>The 18th European Conference on Computer Vision <b>(<a href="https://eccv.ecva.net" target="_blank" style="color:#000000">ECCV 2024</a>)</b>, <font color="#b80000"> <b>Top 2.7%  (198/7293)</b></font> <br /></li>
@@ -635,7 +653,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 </p></td></tr></table>
 
 <table class="imgtable"><tr><td>
-  <img src="./Teasers/ACL25_SGG.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="200px" height="104px"/>&nbsp;</td>
+  <img src="./Teasers/ACL25_SGG.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="200px" height="102px"/>&nbsp;</td>
   <td align="left"><p>
       <div class="pub-title"><a href= "https://huggingface.co/papers/2506.01049" target="_blank" style="color:#002FA7">Taming LLMs by Scaling Learning Rates with Gradient Grouping</a></div>
       <div class="pub-authors">Siyuan Li*, Juanxi Tian* <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="bold-me"><u>Zedong Wang</u>*</a></b>, Xin Jin, Zicheng Liu, Wentao Zhang, Dan Xu </a></div>
@@ -664,7 +682,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 </p></td></tr></table>
 
 <table class="imgtable"><tr><td>
-    <img src="./Teasers/ICML24_VQDNA.jpeg" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="200px" height="106px"/>&nbsp;</td>
+    <img src="./Teasers/ICML24_VQDNA.jpeg" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="200px" height="102px"/>&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href="https://proceedings.mlr.press/v235/li24bm.html" target="_blank" style="color:#002FA7">VQDNA: Unleashing the Power of Vector Quantization for Genomic Sequence Modeling</a></div>
         <div class="pub-authors">Siyuan Li*, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="bold-me"><u>Zedong Wang</u>*</a></b>, Zicheng Liu, Di Wu, Cheng Tan, Jiangbin Zheng, Yufei Huang, Stan Li† </a></div>
@@ -745,7 +763,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 
 
 <table class="imgtable"><tr><td>
-    <img src="./Teasers/NeurIPS23_OpenSTL.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="200px" height="106px"/>&nbsp;</td>
+    <img src="./Teasers/NeurIPS23_OpenSTL.png" class="pub-img" style="border:1.2px solid #464646;padding:5px;border-radius:14px;box-shadow:1.2px 1.2px #bbbbbb" alt="" width="200px" height="104px"/>&nbsp;</td>
     <td align="left"><p>
         <div class="pub-title"><a href= "https://papers.nips.cc/paper_files/paper/2023/hash/dcbff44d11130e75d09d3930411c23e1-Abstract-Datasets_and_Benchmarks.html" target="_blank" style="color:#002FA7">OpenSTL: A Comprehensive Benchmark of Spatio-Temporal Predictive Learning</a></div>
         <div class="pub-authors">Cheng Tan, Siyuan Li, Zhangyang Gao, Wenfei Guan, <b><a href="https://scholar.google.com/citations?hl=en&user=CEJ4pugAAAAJ" target="_blank" class="bold-me"><u>Zedong Wang</u></a></b>, Zicheng Liu, Stan Z. Li† </a></div>
@@ -808,7 +826,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 
 <p><b>Conference Reviewer/PC Member:</b> </p>
 <font size="3"> 
-<ul>
+<ul class="unified-spacing">
 
 <li>International Conference on Learning Representations (<b><a href="https://iclr.cc" target="_blank" style="color:#000000">ICLR</a></b>), 2024 (TinyPapers), 2025<br /></li>
 <li>Annual Conference on Neural Information Processing Systems (<b><a href="https://neurips.cc" target="_blank" style="color:#000000">NeurIPS</a></b>), 2024, 2025<br /></li>
@@ -826,7 +844,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
  
 <p><b>Journal Reviewer:</b> </p>
 <font size="3"> 
-<ul>
+<ul class="unified-spacing">
 <li>IEEE Transactions on Knowledge and Data Engineering (<b><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69" target="_blank" style="color:#000000">TKDE</a></b>)</li>
 </ul>
 </font>
@@ -834,7 +852,7 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 
 <p><b>Membership</b>: </p>
 <font size="3"> 
-<ul>
+<ul class="unified-spacing">
 <li>The Computer Vision Foundation (<b><a href="https://www.thecvf.com" target="_blank" style="color:#000000">CVF</a></b>), Member, 2025-now</li>
 <li>China Computer Federation (<b><a href="https://www.ccf.org.cn/en/" target="_blank" style="color:#000000">CCF</a></b>), Student Member, 2024-2026</li>
 <li>China Society of Image and Graphics (<b><a href="https://en.csig.org.cn" target="_blank" style="color:#000000">CSIG</a></b>), Student Member, 2023</li>
@@ -846,13 +864,13 @@ He has been recognized as an Outstanding or Notable Reviewer at several top conf
 
 
 <A NAME="Acknowledgement"><h2>Acknowledgement</h2></A>
+<div class="unified-spacing">
 My research career cannot be possible without the support from all my awesome mentors, collaborators, and friends:
 <ul>
 <li>Prof. <a href="https://scholar.google.com/citations?hl=en&user=qNCTLV0AAAAJ" target="_blank" style="color:#002FA7">Xinggang Wang</a>, Prof. <a href="https://openreview.net/profile?id=~Yu_Zhou1" target="_blank" style="color:#002FA7">Yu Zhou</a> at HUST.</li>
 <li>Prof. <a href="https://scholar.google.com/citations?hl=en&user=Y-nyLGIAAAAJ" target="_blank" style="color:#002FA7">Stan Z. Li</a>, Dr. <a href="https://scholar.google.com/citations?hl=en&user=SKTQTXwAAAAJ" target="_blank" style="color:#002FA7">Siyuan Li</a>, Dr. <a href="https://scholar.google.com/citations?hl=en&user=EwMGZsgAAAAJ" target="_blank" style="color:#002FA7">Zicheng Liu</a>, Dr. <a href="https://scholar.google.com/citations?hl=en&user=o5A23qIAAAAJ" target="_blank" style="color:#002FA7">Haitao Lin</a>, Dr. <a href="https://scholar.google.com/citations?hl=en&user=egz8bGQAAAAJ" target="_blank" style="color:#002FA7">Jiangbin Zheng</a>, Mr. Siqi Ma at Westlake University.</li>
 <li>Prof. <a href="https://scholar.google.com/citations?hl=en&user=OuSPv-AAAAAJ" target="_blank" style="color:#002FA7">Dan Xu</a>, Dr. <a href="https://scholar.google.com/citations?hl=en&user=ennCRJAAAAAJ" target="_blank" style="color:#002FA7">Zhenxing Mi</a>, Dr. <a href="https://scholar.google.com/citations?hl=en&user=4OuUHYQAAAAJ" target="_blank" style="color:#002FA7">Yuxin Wang</a>, Mr. <a href="https://scholar.google.com.hk/citations?hl=en&user=IuGoHCkAAAAJ" target="_blank" style="color:#002FA7">Chi Yan</a>, Mr. <a href="https://wangandyyucheng.github.io" target="_blank" style="color:#002FA7">Yucheng Wang</a>, Mr. <a href="https://scholar.google.com/citations?hl=en&user=1xsk9rYAAAAJ" target="_blank" style="color:#002FA7">Yiwei Chen</a> at HKUST.</li>
 </ul>
-<div style="text-align:justify">
 <p style="line-height: 0.2;">&nbsp; </p>
 Beyond academia, I feel incredibly fortunate to met wonderful friends along the way (particularly during my middle and high school years in Shenzhen and the two years in Hangzhou). Thank you all for your presence and support these years, and I am deeply grateful for our shared moments. Whether we are still in touch or not, I wish you all the best and a bright future!
 
@@ -1001,7 +1019,7 @@ Even if most of you above may never visit this page, my door is always open for 
 <br />
 
 <A NAME="Musical Companion"><h2>Musical Companion</h2></A>
-<div style="text-align:justify; line-height:146%">
+<div class="unified-spacing" style="text-align:justify">
 Over countless nights of research, this 26-minute masterpiece has been my steadfast companion. It embodies exploration, contemplation, and inspiration, much like the research journey itself. Hope you enjoy it!
 </div>
 <br />
